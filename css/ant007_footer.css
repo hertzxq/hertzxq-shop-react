@@ -9,7 +9,7 @@
     height: 50px;
     line-height: 0;
 }
-#ant-section__ant007_footer .footer-item {}
+
 #ant-section__ant007_footer .footer-item img {
     padding-bottom: 40px;
 
@@ -20,6 +20,7 @@
     letter-spacing: .2px;
 	line-height: 28px;
 	margin-bottom: 0;
+    text-align: left;
 } 
 #ant-section__ant007_footer .footer-item a.btn {
 	display: inline-block;

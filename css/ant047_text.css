@@ -14,6 +14,7 @@
     font-size: 16px;
     color: #626262;
     line-height: 1.7;
+    text-align: left;
 }
 
 .ant-section__ant047_text .mt-60 {
@@ -21,4 +22,8 @@
 }
 .ant-section__ant047_text .mb-30 {
     margin-bottom: 30px;
+}
+
+.title {
+    text-align: center;
 }
