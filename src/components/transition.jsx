@@ -1,7 +1,7 @@
-export default function Transition() {
+export default function Transition(props) {
     return (
         <section class="ant-section__ant000_devider ">
-            <h4>HERZXQ</h4>
+            <h4>{props.title}</h4>
         </section>
     )
 }

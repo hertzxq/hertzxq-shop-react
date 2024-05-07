@@ -1,4 +1,4 @@
-export default function Bestadmins() {
+export default function Bestadmins(props) {
     return (
         <section id="ant-section__ant011_team" class="ant-section__ant011_team ">
 
@@ -9,11 +9,11 @@ export default function Bestadmins() {
                         <div class="art_net_theme_header-section">
 
                             <div class="art_net_theme_section-overtitle">
-                                <p>лучшие сотрудники</p>
+                                <p>{props.title}</p>
                             </div>
 
                             <div class="art_net_theme_section-title">
-                                <h2>Наша команда</h2>
+                                <h2>{props.team}</h2>
                             </div>
 
                             <div class="art_net_theme_section-title-separator">
@@ -21,7 +21,7 @@ export default function Bestadmins() {
                             </div>
 
                             <div class="art_net_theme_section-subtitle">
-                                <p>так как я ОДИН, я взял на себя ответственность назваться лучшим!</p>
+                                <p>{props.subtitle}</p>
                             </div>
 
                         </div>
@@ -40,13 +40,13 @@ export default function Bestadmins() {
                                     <ul>
                                         <li>
                                             <a title="E-mail" rel="nofollow" target="_blank"
-                                                href="mailto:example@gmail.com">
+                                                href={props.email}>
                                                 <i class="fas fa-envelope"></i>
                                             </a>
                                         </li>
                                         <li>
                                             <a title="Инстаграмм" rel="nofollow" target="_blank"
-                                                href="https://instagram.com/">
+                                                href={props.insta}>
                                                 <i class="fab fa-instagram"></i>
                                             </a>
                                         </li>
@@ -55,9 +55,9 @@ export default function Bestadmins() {
                                 </div>
                             </div>
 
-                            <h2>Максик Ноунов</h2>
+                            <h2>{props.name}</h2>
 
-                            <span>разработчик</span>
+                            <span>{props.dev}</span>
 
                         </div>
                     </div>

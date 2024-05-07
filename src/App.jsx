@@ -2,14 +2,15 @@ import { useState } from 'react'
 import Header from './components/header'
 import Main from './components/main'
 import Footer from './components/footer'
+import { data } from './data'
 import './App.css'
 
 export default function App() {
   return (
     <>
-    <Header />
+    <Header {...data[0]} />
     <Main />
-    <Footer />
+    <Footer {...data[1]} />
     </>
   )
 }

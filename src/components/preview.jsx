@@ -1,4 +1,6 @@
-export default function Preview() {
+import { data } from "../data"
+
+export default function Preview(props) {
     return (
         <section id="ant-section__ant012_welcome" class="ant-section__ant012_welcome ">
 
@@ -14,14 +16,14 @@ export default function Preview() {
 
                                 <div class="banner-center-box text-white">
 
-                                    <h1>Программы и плагины</h1>
+                                    <h1>{props.title}</h1>
                                     <div class="description">
-                                        <p>на этом сайте все программы и плагины абосолютно бесплатные</p>
+                                        <p>{props.text}</p>
                                     </div>
 
                                     <a class="btn popup-btn xx-large rounded colorful hover-colorful-darken"
                                         href="#contact" title="Заказать услугу">
-                                        Посмотреть </a>
+                                        {props.button} </a>
 
                                 </div>
 

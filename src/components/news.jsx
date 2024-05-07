@@ -1,4 +1,4 @@
-export default function News() {
+export default function News(props) {
     return (
         <section id="ant-section__ant010_blog" class="ant-section__ant010_blog ">
             <div class="container">
@@ -7,11 +7,11 @@ export default function News() {
                         <div class="art_net_theme_header-section">
 
                             <div class="art_net_theme_section-overtitle">
-                                <p>Мои новости</p>
+                                <p>{props.subtitle}</p>
                             </div>
 
                             <div class="art_net_theme_section-title">
-                                <h2>Правда я гений?</h2>
+                                <h2>{props.title1}</h2>
                             </div>
 
                             <div class="art_net_theme_section-title-separator">
@@ -19,9 +19,8 @@ export default function News() {
                             </div>
 
                             <div class="art_net_theme_section-subtitle">
-                                <p>ну так как сайт мой, я решил делится своими делами с вами!!!</p>
-                                <p>Надо отличаться от большинства, вместо тг-канала, я сделал свой сайт, чтобы чем-то
-                                    делится аахвахывхавы</p>
+                                <p>{props.text1}</p>
+                                <p>{props.text2}</p>
                             </div>
 
                         </div>
@@ -38,13 +37,11 @@ export default function News() {
                                     alt="Институциональный SWOT-анализ: повторный контакт или рекламоноситель?" />
                             </div>
                             <div class="news-text">
-                                <h5><a href="blog-single.html" class="siteIdea">Идея сайта</a></h5>
-                                <p>многословить не буду, я хочу чтобы такие же люди как я заходил и просто брали то, 
-                                    что им нужно, вот и все, ну и еще денег хочу =)
-                                </p>
+                                <h5><a href="blog-single.html" class="siteIdea">{props.title2}</a></h5>
+                                <p>{props.subtitle2}</p>
                                 <div class="news-det">
                                     <span>27 Апр 2024</span>
-                                    <a href="blog-single.html">Подробнее</a>
+                                    <a href="blog-single.html">{props.more}</a>
                                 </div>
                             </div>
                         </div>
