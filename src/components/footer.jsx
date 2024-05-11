@@ -1,22 +1,22 @@
 export default function Footer(props) {
     return (
-        <footer id="ant-section__ant007_footer" class="" >
+        <footer id="ant-section__ant007_footer" className="" >
 
-        <div class="container">
-            <div class="row">
+        <div className="container">
+            <div className="row">
 
-                <div class="col-lg-5 ant007_footer__foter-item-wrap">
-                    <div class="footer-item">
+                <div className="col-lg-5 ant007_footer__foter-item-wrap">
+                    <div className="footer-item">
                         <p>{props.text}</p>
-                        <a href="#contact" class="btn" title="Заказать звонок">{props.title}</a>
+                        <a href="#contact" className="btn" title="Заказать звонок">{props.title}</a>
 
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-4 ant007_footer__foter-item-wrap footer-col-4">
-                    <div class="footer-item">
+                <div className="col-lg-2 col-md-4 ant007_footer__foter-item-wrap footer-col-4">
+                    <div className="footer-item">
                         <h6>{props.info}</h6>
 
-                        <ul class="footer-menu">
+                        <ul className="footer-menu">
                             <li>
                                 <a href="index.html">{props.backOnSite}</a>
                             </li>
